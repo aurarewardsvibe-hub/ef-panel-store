@@ -1,14 +1,15 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.efpanelstore.app">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
+        android:theme="@style/AppTheme"
         android:label="EF PANEL STORE"
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:supportsRtl="true">
 
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -16,6 +17,7 @@
             </intent-filter>
 
         </activity>
+
     </application>
 
 </manifest>
